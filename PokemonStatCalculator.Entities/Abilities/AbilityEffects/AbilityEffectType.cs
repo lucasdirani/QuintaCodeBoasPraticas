@@ -1,0 +1,36 @@
+﻿namespace PokemonStatCalculator.Entities.Abilities.AbilityEffects
+{
+    public enum AbilityEffectType
+    {
+        CauseStatusConditionOnContact,
+        ChangeAbilityOnContact,
+        DecreaseHPOnContact,
+        DecreaseStatsOnContact,
+        InfatuateOnContact,
+        PerishOnContact,
+        ChangeWeatherConditionOnContact,
+        RaiseMovePowerOnContact,
+        ChangeTypeOnWeatherCondition,
+        CureStatusConditionOnWeatherCondition,
+        DecreaseAccuracyOnWeatherCondition,
+        DecreaseStatsOnWeatherCondition,
+        PreventStatusConditionOnWeatherCondition,
+        RaiseMovesOnWeatherCondition,
+        RaiseStatsOnWeatherCondition,
+        RecoverHPOnWeatherCondition,
+        ReduceHPOnWeatherCondition,
+        RestoreBerryOnWeatherCondition,
+        MoveTypePriority,
+        MoveCategoryPriority,
+        MoveActionPriority,
+        WeatherConditionStatIncreasing,
+        AutomaticStatIncreasing,
+        TerrainStatIncreasing,
+        StatusConditionStatIncreasing,
+        CriticalHitStatIncreasing,
+        UserDefeatTargetStatIncreasing,
+        LostHPStatIncreasing,
+        DecreaseStatUserStatIncreasing,
+        DamageOfTypeStatIncreasing,
+    }
+}

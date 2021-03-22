@@ -36,6 +36,10 @@ namespace PokemonStatCalculator.WebApiConsumer.Services
         {
             authenticationResult ??= await apiAuthenticationService.LoginAsync(JsonConvert.SerializeObject(loginUser));
 
+            #if DEBUG
+                authenticationResult = new UserAuthenticationResultViewModel(Properties.Resources.TokenExpirado);
+            #endif
+
             var pokemonTrainingPolicy = apiPolicies.CreateRetryExecuteAsyncPolicyFor<HttpRequestException, Result<string>>(
                 onRetryAsync: async() => authenticationResult = await apiAuthenticationService.LoginAsync(JsonConvert.SerializeObject(loginUser)),
                 handler: unauthorizedEx => unauthorizedEx.Message.Contains("401 Unauthorized"),

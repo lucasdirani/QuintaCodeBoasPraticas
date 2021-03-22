@@ -30,6 +30,13 @@ namespace PokemonStatCalculator.WebApiConsumer
                 pokemonTraining: JsonConvert.DeserializeObject<TrainingViewModel>(pokemonTrainingJSON), 
                 loginUser: JsonConvert.DeserializeObject<LoginUserViewModel>(loginJSON)
             );
+
+            if (result.IsSuccess)
+            {
+                Console.WriteLine(JsonConvert.SerializeObject(result.Value));
+
+                Console.ReadKey();
+            }
         }
     }
 }

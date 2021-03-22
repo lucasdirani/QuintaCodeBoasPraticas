@@ -105,5 +105,14 @@ namespace PokemonStatCalculator.WebApiConsumer.Properties {
                 return ResourceManager.GetString("PokemonTrainingJSON", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MTQ0NTQ1MzcsImV4cCI6MTYxNDQ1ODEzNywiaWF0IjoxNjE0NDU0NTM3LCJpc3MiOiJTdGF0Q2FsY3VsYXRvcldlYkFwaSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0In0.wIONL6C0pO0c2DI2zX17xx4V1WEzdaLqFWsiD8tvW6w.
+        /// </summary>
+        internal static string TokenExpirado {
+            get {
+                return ResourceManager.GetString("TokenExpirado", resourceCulture);
+            }
+        }
     }
 }

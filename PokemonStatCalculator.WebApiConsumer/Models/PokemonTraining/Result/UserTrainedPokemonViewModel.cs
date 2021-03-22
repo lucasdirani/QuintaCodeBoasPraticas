@@ -4,7 +4,7 @@ namespace PokemonStatCalculator.WebApiConsumer.Models.PokemonTraining.Result
 {
     public class UserTrainedPokemonViewModel
     {
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
         public UserTrainerResultViewModel User { get; set; }
 

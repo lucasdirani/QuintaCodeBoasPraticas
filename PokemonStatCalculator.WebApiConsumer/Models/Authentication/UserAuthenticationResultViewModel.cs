@@ -14,6 +14,13 @@ namespace PokemonStatCalculator.WebApiConsumer.Models.Authentication
             StatusCode = statusCode;
         }
 
+        public UserAuthenticationResultViewModel(string responseContent)
+        {
+            ResponseContent = responseContent;
+            AuthenticationIsSuccessful = true;
+            StatusCode = HttpStatusCode.OK;
+        }
+
         public string ResponseContent { get; private set; }
 
         public bool AuthenticationIsSuccessful { get; private set; }

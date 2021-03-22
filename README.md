@@ -1,6 +1,6 @@
 # Quinta Code: Boas Práticas na Construção de APIs com C#
 
-Este repositório possui projetos de exemplo usados para a apresentação do Quinta Code de 18/03/2021: Boas Práticas na Construção de APIs com C#.
+Este repositório possui projetos de exemplo usados para a apresentação do Quinta Code de 25/03/2021: Boas Práticas na Construção de APIs com C#.
 
 Para obter os slides que informam mais a respeito desta solução, basta contatar por e-mail o criador deste repositório.
 
